@@ -1,20 +1,25 @@
-// ***********************************************************
-// This example support/index.js is processed and
-// loaded automatically before your test files.
-//
-// This is a great place to put global configuration and
-// behavior that modifies Cypress.
-//
-// You can change the location of this file or turn off
-// automatically serving support files with the
-// 'supportFile' configuration option.
-//
-// You can read more here:
-// https://on.cypress.io/configuration
-// ***********************************************************
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+//import { useHistory } from 'react-router-dom';
+import reportWebVitals from './reportWebVitals';
+//import { Button} from 'react-bootstrap';
 
-// Import commands.js using ES2015 syntax:
-import './commands'
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
-// Alternatively you can use CommonJS syntax:
-// require('./commands')
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
+
+ 
+  
+
+
+  
